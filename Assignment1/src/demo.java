@@ -62,7 +62,7 @@
       // Create a new Hadoop job named ``word count''
       Job job = Job.getInstance(conf, "word count");
       // Sets the Jar by finding where the WordCount class came from
-      job.setJarByClass(WordCount.class);
+      job.setJarByClass(demo.class);
       // Sets mapper class for the job.
       job.setMapperClass(TokenizerMapper.class);
       // Sets combiner class for the job.
